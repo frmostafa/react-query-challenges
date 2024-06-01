@@ -9,7 +9,8 @@ const queryClient = new QueryClient({
   defaultOptions:{
     queries : {
       refetchInterval : 5000,
-      staleTime:4000
+      staleTime:4000,
+      refetchOnReconnect: true
     }
   }
 });
